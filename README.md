@@ -6,7 +6,6 @@ The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://w
 **Business Insights:** Forecasting results provide actionable insights to minimize stock-outs, reduce excess inventory, and optimize replenishment planning.
 
 ---
-
 ## Project Objectives
 
 - Build a model to predict the number of units sold for each product daily
@@ -24,7 +23,6 @@ The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://w
   - Fully connected ANN
 
 ---
-
 ## Dataset & Variables
 The dataset was provided in Kaggle (see Acknowledgments section) and includes detailed of retail store inventory as a table named **retail_store_inventory** with below varaibles.
 - **number of Rows of the table:** ~73,000  
@@ -45,36 +43,52 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
 - Seasonality –------------- Cyclical or seasonal effects influencing sales patterns (e.g., Autumn, winter, spring).
 
 ---
+## Methodology ???
+1. **Data Preprocessing**  
+   - Handling missing values  
+   - Feature engineering (time features, product/store encoding)  
+   - Normalization  
 
-## Modeling ???
-- Framework: TensorFlow / PyTorch  
-- Architecture:  
-  - Input Layer: Encoded categorical + scaled numerical features  
-  - Dense(128, ReLU)  
-  - Dense(64, ReLU)  
-  - Dropout(0.3)  
-  - Output: Dense(1, Linear)  
+2. **Model Development**  
+   - **ANN in PyTorch**  
+   - **ANN in TensorFlow**
+   - - Framework: TensorFlow / PyTorch  
+   - **Architecture:**  
+       - Input Layer: Encoded categorical + scaled numerical features  
+       - Dense(128, ReLU)  
+       - Dense(64, ReLU)  
+       - Dropout(0.3)  
+       - Output: Dense(1, Linear) 
+   - Hyperparameter tuning  
+
+3. **ML Baseline Comparisons**  
+   - Linear Regression  
+   - Random Forest  
+   - XGBoost  
+
+4. **Evaluation Metrics**  
+   - **MAE (Mean Absolute Error):** measures average forecast error  
+   - **RMSE (Root Mean Squared Error):** penalizes larger errors  
+   - **R² Score:** explains variance captured by the model
 
 ---
-## Modeling and hyperparamter tunning ???
-- Framework: TensorFlow / PyTorch  
-- Architecture (example):
+## Results ???
+| Model                 | RMSE ↓  | MAE ↓  | R² ↑ |
+|-----------------------|---------|--------|------|
+| Linear Regression     | ...     | ...    | ...  |
+| Random Forest         | ...     | ...    | ...  |
+| XGBoost               | ...     | ...    | ...  |
+| ANN (PyTorch)         | ...     | ...    | ...  |
+| ANN (TensorFlow)      | ...     | ...    | ...  |
 
 ---
+## ⚖️ PyTorch vs TensorFlow – My Observations ???
+- **PyTorch:** More intuitive training loop, easier debugging.  
+- **TensorFlow/Keras:** More concise, production-ready, easier deployment with TensorFlow Serving.  
 
-## Evaluation Metrics
-- **MAE (Mean Absolute Error):** measures average forecast error  
-- **RMSE (Root Mean Squared Error):** penalizes larger errors  
-- **R² Score:** explains variance captured by the model  
-
----
-## Results ??? 
-- ANN vs baseline ML comparison ()  
-- Error metrics (MAE, RMSE, R²)  
-- Forecast plots  
+Both frameworks achieved **comparable performance**, but each had strengths depending on workflow needs. 
 
 ---
-
 ## Project Structure ???
 ```
 Retail-Inventory-Demand-Forecasting-DeepLearning/
@@ -99,64 +113,5 @@ Retail-Inventory-Demand-Forecasting-DeepLearning/
 - Deploy model as an API for real-time demand forecasting  
 
 ---
-
 ## Acknowledgments
 Dataset: [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset)  
-
-
-
-
-
-
-
-🧠 Methodology
-
-Data Preprocessing
-
-Handling missing values
-
-Feature engineering (time features, product/store encoding)
-
-Normalization
-
-Model Development
-
-ANN in PyTorch
-
-ANN in TensorFlow
-
-Hyperparameter tuning
-
-Baseline Comparisons
-
-Linear Regression
-
-Random Forest
-
-XGBoost
-
-Evaluation Metrics
-
-RMSE, MAE, R² Score
-
-🔎 Results
-Model	RMSE ↓	MAE ↓	R² ↑
-Linear Regression	...	...	...
-Random Forest	...	...	...
-XGBoost	...	...	...
-ANN (PyTorch)	...	...	...
-ANN (TensorFlow)	...	...	...
-
-
-
-
-
-
-
-
-
-
-
-
-
-
