@@ -2,7 +2,8 @@ This project applies deep learning to a critical supply chain problem: predictin
 
 ## Project Overview
 Accurate  product demand (Units_Sold) is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  **Artificial Neural Networks (ANNs)**, one of the main methods in deep learning, to **predict daily product demand (Units_Sold)** based on store, product, and inventory data.
-The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset).
+The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset). 
+**Business Insights:** Forecasting results provide actionable insights to minimize stock-outs, reduce excess inventory, and optimize replenishment planning.
 
 ---
 
@@ -17,19 +18,14 @@ The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://w
 ---
 ## Tools & Techniques used ???
 - **Programming Language:** Python
-- **Development Environment:** Jupyter Notebook and Git/GitHub
-- **Python Libraries:** 
-  - Numpy
-  - Pandas
-  - Matplotlib
-  - PyTorch
-  - TensorFlow
+- **Python Libraries:** Numpy, Pandas, Matplotlib, Scikit-learn, XGBoost, PyTorch, TensorFlow
+- **Tool:** Jupyter Notebook and Git/GitHub
 - **Techniques:**
   - Fully connected ANN
 
 ---
 
-## Dataset & Variables ???
+## Dataset & Variables
 The dataset was provided in Kaggle (see Acknowledgments section) and includes detailed of retail store inventory as a table named **retail_store_inventory** with below varaibles.
 - **number of Rows of the table:** ~73,000  
 - **Columns (variabes):**
@@ -50,9 +46,9 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
 
 ---
 
-## Model ???
+## Modeling ???
 - Framework: TensorFlow / PyTorch  
-- Architecture (example):  
+- Architecture:  
   - Input Layer: Encoded categorical + scaled numerical features  
   - Dense(128, ReLU)  
   - Dense(64, ReLU)  
@@ -60,52 +56,43 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
   - Output: Dense(1, Linear)  
 
 ---
+## Modeling and hyperparamter tunning ???
+- Framework: TensorFlow / PyTorch  
+- Architecture (example):
 
-## 📈 Evaluation Metrics
+---
+
+## Evaluation Metrics
 - **MAE (Mean Absolute Error):** measures average forecast error  
 - **RMSE (Root Mean Squared Error):** penalizes larger errors  
 - **R² Score:** explains variance captured by the model  
 
 ---
-
-## 🚀 Project Pipeline
-1. **Data Preprocessing**
-   - Handle missing values & outliers  
-   - Encode categorical variables (One-Hot / Embedding)  
-   - Scale numerical features  
-   - Create lag features for time-series context  
-
-2. **Modeling**
-   - Build baseline regression models for comparison  
-   - Train ANN regression model  
-   - Tune hyperparameters (batch size, learning rate, hidden units)  
-
-3. **Evaluation**
-   - Compare ANN vs baseline (Linear Regression, Random Forest, XGBoost)  
-   - Plot Actual vs Predicted demand  
-
-4. **Insights**
-   - Identify demand patterns by product & store  
-   - Show potential for **reducing stock-outs** and **minimizing holding costs**  
-
----
-
-## Results (to be updated after training)
-- ANN vs baseline comparison  
+## Results ??? 
+- ANN vs baseline ML comparison ()  
 - Error metrics (MAE, RMSE, R²)  
 - Forecast plots  
 
 ---
 
-
-
-
-
-
-
+## Project Structure ???
+```
+Retail-Inventory-Demand-Forecasting-DeepLearning/
+│── data/                  # Kaggle dataset (not uploaded due to size)
+│── pytorch_version/       # PyTorch implementation
+│   ├── model.py           # ANN architecture
+│   ├── train.py           # Training loop
+│   └── evaluate.py        # Model evaluation
+│── tensorflow_version/    # TensorFlow/Keras implementation
+│   ├── model.py           # ANN architecture
+│   ├── train.py           # Training & evaluation
+│── traditional_ml/        # Baseline ML models (LR, RF, XGBoost)
+│── notebooks/             # EDA, experiments, comparisons
+│── results/               # Plots, metrics, reports
+│── README.md              # Project documentation
+```
 
 ---
-
 ## Future Work
 - Incorporate external features (holidays, promotions, weather)  
 - Experiment with sequence models (RNN/LSTM/GRU) for time-series demand  
@@ -119,46 +106,6 @@ Dataset: [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/
 
 
 
-
-
-Key highlights:
-
-Data Preprocessing & Feature Engineering: Created time-based features, lag variables, and encoded categorical attributes.
-
-Model Development: Designed and trained an ANN using TensorFlow/PyTorch with multiple hidden layers and dropout for regularization.
-
-Evaluation: Benchmarked performance against classical regression models (Linear Regression, Random Forest, XGBoost) using MAE, RMSE, and R².
-
-Business Insights: Forecasting results provide actionable insights to minimize stock-outs, reduce excess inventory, and optimize replenishment planning.
-
-This project demonstrates the ability to combine deep learning expertise with real-world supply chain applications, producing solutions that directly impact operational efficiency and business profitability.
-
-
-
-
-
-
-
-
-
-
-
-
-## 📁 Repository Structure
-
-Retail-Inventory-Demand-Forecasting/
-│── data/                  # Kaggle dataset (not uploaded due to size)
-│── pytorch_version/       # PyTorch implementation
-│   ├── model.py           # ANN architecture
-│   ├── train.py           # Training loop
-│   └── evaluate.py        # Model evaluation
-│── tensorflow_version/    # TensorFlow/Keras implementation
-│   ├── model.py           # ANN architecture
-│   ├── train.py           # Training & evaluation
-│── traditional_ml/        # Baseline ML models (LR, RF, XGBoost)
-│── notebooks/             # EDA, experiments, comparisons
-│── results/               # Plots, metrics, reports
-│── README.md              # Project documentation
 
 
 
