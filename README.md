@@ -82,7 +82,7 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
 | ANN (TensorFlow)      | ...     | ...    | ...  |
 
 ---
-## ⚖️ PyTorch vs TensorFlow – My Observations ???
+## PyTorch vs TensorFlow – My Observations ???
 - **PyTorch:** More intuitive training loop, easier debugging.  
 - **TensorFlow/Keras:** More concise, production-ready, easier deployment with TensorFlow Serving.  
 
