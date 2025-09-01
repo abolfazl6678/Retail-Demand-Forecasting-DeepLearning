@@ -1,30 +1,43 @@
-# Retail-Inventory-Demand-Forecasting-DeepLearning
-This project applies deep learning to a critical supply chain problem: predicting daily product demand in retail stores. Using the Kaggle Retail Inventory Forecasting dataset, I developed an Artificial Neural Network (ANN) regression model to forecast the number of units sold for each product-store-day combination.
+This project applies deep learning to a critical supply chain problem: predicting daily product demand in retail stores. Using the Kaggle Retail Inventory Forecasting dataset, I developed an Artificial Neural Network (ANN) regression model to forecast the number of units sold for each product-store.
 
-
-
-
-# 🏬 Retail Inventory Demand Forecasting with ANN
-
-## 📌 Project Overview
-Accurate inventory forecasting is a critical challenge in retail supply chains. Stock-outs lead to lost sales, while overstocking increases holding costs.  
-In this project, we use **Artificial Neural Networks (ANNs)** to **predict daily product demand (`Units_Sold`)** based on store, product, and inventory data.  
-
+## Project Overview
+Accurate  product demand (Units_Sold) is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  **Artificial Neural Networks (ANNs)**, one of the main methods in deep learning, to **predict daily product demand (Units_Sold)** based on store, product, and inventory data.
 The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset).
 
 ---
 
-## 🎯 Problem Statement
-> **Given past sales, inventory levels, and product/store details, predict the number of units sold for each product in each store on a given day.**
+## Project Objectives
 
-This is formulated as a **supervised regression problem**.
+- Build a model to predict the number of units sold for each product
+- The model is built using Artificial Neural Networks (ANNs) and trained by past sales, inventory levels, and product/store details given for each product in each store on a given day
+- The model is formulated as a **supervised regression problem**.
+- The performance of the model is compared to trditional machine learning models (Linear Regression, Support Vector Machine, XGboost, Random Forst)
+
+---
+## Tools & Techniques used ???
+- **Python Libraries:**
+  - Numpy
+  - Pandas
+  - Matplotlib
+  - Pytorch
+  - Tensorflow
+- **Techniques:**
+  - Fully connected ANN
 
 ---
 
-## 📂 Dataset
-- **Rows:** ~73,000  
-- **Columns (examples):**
-  - `Date`
+## Dataset & Variables
+The dataset was provided in Kaggle (see Acknowledgments section) and includes detailed of retail store inventory as a table named **retail_store_inventory** with below varaibles.
+- **number of Rows of the table:** ~73,000  
+- **Columns (variabes):**
+- Date –--------------------------- Unique identifier for each record  
+- Case Number –------------------ Police department’s unique case ID  
+
+
+
+
+
+   - `Date`
   - `Store_ID`
   - `Product_ID`
   - `Product_Category`
@@ -43,8 +56,7 @@ This is formulated as a **supervised regression problem**.
 
 ---
 
-## 🎯 Target
-- **`Units_Sold`** → continuous variable (demand forecast)
+
 
 ---
 
@@ -111,7 +123,7 @@ This is formulated as a **supervised regression problem**.
 
 ---
 
-## 🙌 Acknowledgments
+## Acknowledgments
 Dataset: [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset)  
 Author: *Your Name*  
 
