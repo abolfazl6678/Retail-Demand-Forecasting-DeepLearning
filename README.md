@@ -1,4 +1,7 @@
+# Retail-Inventory-Demand-Forecasting-DeepLearning
 This project applies deep learning to a critical supply chain problem: predicting daily product demand in retail stores. Using the Kaggle Retail Inventory Forecasting dataset, I developed an Artificial Neural Network (ANN) regression model to forecast the number of units sold for each product-store.
+
+---
 
 ## Project Overview
 Accurate  product demand (Units_Sold) is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  **Artificial Neural Networks (ANNs)**, one of the main methods in deep learning, to **predict daily product demand (Units_Sold)** based on store, product, and inventory data.
@@ -115,3 +118,14 @@ Retail-Inventory-Demand-Forecasting-DeepLearning/
 ---
 ## Acknowledgments
 Dataset: [Kaggle-Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset)  
+
+
+---
+
+## Author
+
+**Abolfazl Zolfaghari**  
+Data Science Graduate
+[Email](ab.zolfaghari.abbasghaleh) | [GitHub](https://github.com/abolfazl6678)
+
+---
