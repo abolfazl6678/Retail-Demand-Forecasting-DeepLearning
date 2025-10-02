@@ -1,27 +1,27 @@
 # Retail-Inventory-Demand-Forecasting-DeepLearning
-This project applies deep learning to a critical supply chain problem: predicting daily product demand in retail stores. Using the Kaggle Retail Inventory Forecasting dataset, I developed an Artificial Neural Network (ANN) regression model to forecast the number of units sold for each product-store.
+A critical supply chain problem is **prediction of daily product demand in retail stores**. This project applies deep learning - Artificial Neural Network (ANN) - to build a model for the demand prediction.
 
 ---
 
 ## Project Overview
-Accurate  product demand (Units_Sold) is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  **Artificial Neural Networks (ANNs)**, one of the main methods in deep learning, to **predict daily product demand (Units_Sold)** based on store, product, and inventory data.
-The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset). 
+Accurate  product demand is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  **Artificial Neural Networks (ANNs)**, one of the main methods in **Deep Learning**, to **predict daily product demand**.
 **Business Insights:** Forecasting results provide actionable insights to minimize stock-outs, reduce excess inventory, and optimize replenishment planning.
 
 ---
-## Project Objectives
+## Project Objectives ?????
 
-- Build a model to predict the number of units sold for each product daily
-- The model is built using Artificial Neural Networks (ANNs) and trained by past sales, inventory levels, and product/store details given for each product in  a given day
+- Build a model to predict the number of units sold (demand) for each product daily
+- The model is built using Artificial Neural Networks (ANNs) - Deep Learning
+-  and trained by past sales, inventory levels, and product/store details given for each product in  a given day
 - The model is formulated as a **supervised regression problem**
 - The performance of the model is compared to trditional machine learning models (Linear Regression, XGboost, Random Forst)
 - The model is built using  two main deep learning Python librairies **(PyTorch and TensorFlow)**
 
 ---
-## Tools & Libraries used
+## Tools & Libraries used ?????
 - **Programming Language:** Python
-- **Python Libraries:** Numpy, Pandas, Matplotlib, Scikit-learn, XGBoost, PyTorch, TensorFlow
-- **Tool:** Jupyter Notebook and Git/GitHub
+- **Python Libraries:** Numpy, Pandas, Matplotlib, Scikit-learn, PyTorch, TensorFlow
+- **Tool:** Jupyter Notebook, Git/GitHub, Google Colab
 
 ---
 ## Dataset & Variables
