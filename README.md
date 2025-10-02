@@ -28,6 +28,21 @@ Accurate  product demand forcast is a critical challenge in retail supply chains
 The dataset was provided in Kaggle (see Acknowledgments section) and includes detailed of retail store inventory as a table named **retail_store_inventory** with below varaibles.
 - **number of Rows of the table:** ~73,000  
 - **Columns (variabes):**
+
+| Column Name         | Description                              |
+|---------------------|------------------------------------------|
+| `Customer ID`       | Unique identifier for each patient       |
+| `Year`              | Year of hospitalization                  |
+| `Month`             | Month of hospitalization                 |
+| `Date`              | Date of hospitalization                  |
+| `No_of_children`    | Number of children the patient has       |
+| `Charges`           | Hospitalization cost                     |
+| `Hospital_Tier`     | Tier level of the hospital (tie1-1 best) |
+| `City_Tier`         | Tier classification of the city (tie1-1 best)|
+| `State_ID`          | ID of the State                          |
+
+
+
 - Date –--- ---------------- The specific day when the sales or demand data was recorded.  
 - Store ID –---------------- A unique identifier for each store location.
 - Product ID –-------------- A unique identifier for each product in the catalog.
