@@ -18,12 +18,10 @@ The dataset comes from [Kaggle – Retail Store Inventory Forecasting](https://w
 - The model is built using  two main deep learning Python librairies **(PyTorch and TensorFlow)**
 
 ---
-## Tools & Techniques used ???
+## Tools & Libraries used
 - **Programming Language:** Python
 - **Python Libraries:** Numpy, Pandas, Matplotlib, Scikit-learn, XGBoost, PyTorch, TensorFlow
 - **Tool:** Jupyter Notebook and Git/GitHub
-- **Techniques:**
-  - Fully connected ANN
 
 ---
 ## Dataset & Variables
