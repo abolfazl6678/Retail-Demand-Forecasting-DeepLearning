@@ -93,7 +93,24 @@ Both frameworks achieved **comparable performance**, but each had strengths depe
 ## Project Structure ???
 ```
 Retail-Inventory-Demand-Forecasting-DeepLearning/
-│── data/                  # Kaggle dataset (not uploaded due to size)
+├── data/
+│ ├── raw/
+│ │   └── retail_store_inventory.csv
+│ ├── interim/
+│ │   ├── ?????.py           
+│ │   ├── ?????.py           
+│ │   └── ?????.xlsx
+│ └── processed/
+│     ├── ?????.parquet
+│     ├── ?????.parquet
+│     ├── ?????.parquet
+│     └── ?????.parquet
+
+
+
+
+
+
 │── pytorch_version/       # PyTorch implementation
 │   ├── model.py           # ANN architecture
 │   ├── train.py           # Training loop
@@ -106,6 +123,26 @@ Retail-Inventory-Demand-Forecasting-DeepLearning/
 │── results/               # Plots, metrics, reports
 │── README.md              # Project documentation
 ```
+
+```
+├── data/
+│ ├── interim/
+│ │   ├── df_Hospitalisation_details.parquet
+│ │   ├── df_Medical_Examinations.parquet
+│ │   ├── df.parquet
+│ │   └── df_Names.parquet
+│ └── raw/
+│     ├── Hospitalisation_details.csv
+│     ├── names.csv
+│     └── medical_examination.xlsx
+
+
+
+
+```
+
+
+
 
 ---
 ## Future Work
