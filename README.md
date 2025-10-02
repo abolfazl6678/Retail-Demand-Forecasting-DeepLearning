@@ -1,27 +1,27 @@
-# Retail-Inventory-Demand-Forecasting-DeepLearning
-A critical supply chain problem is **prediction of daily product demand in retail stores**. This project applies deep learning - Artificial Neural Network (ANN) - to build a model for the demand prediction.
+# Retail-Demand-Forecasting-DeepLearning
+This project applies deep learning - Artificial Neural Network (ANN) - to build a model for **prediction of daily product demand in retail stores**.
 
 ---
 
 ## Project Overview
-Accurate  product demand is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  **Artificial Neural Networks (ANNs)**, one of the main methods in **Deep Learning**, to **predict daily product demand**.
+Accurate  product demand forcast is a critical challenge in retail supply chains due to its direct effect on lost sales if it is lower and excess cost due to overstocking if it is higher. In this project, I used  Artificial Neural Networks (ANNs), one of the main methods in Deep Learning, to predict daily product demandin retail stores.
 **Business Insights:** Forecasting results provide actionable insights to minimize stock-outs, reduce excess inventory, and optimize replenishment planning.
 
 ---
-## Project Objectives ?????
+## Project Objectives and assumptions
 
-- Build a model to predict the number of units sold (demand) for each product daily
+- Build a model to predict daily demand for each product 
 - The model is built using Artificial Neural Networks (ANNs) - Deep Learning
--  and trained by past sales, inventory levels, and product/store details given for each product in  a given day
-- The model is formulated as a **supervised regression problem**
-- The performance of the model is compared to trditional machine learning models (Linear Regression, XGboost, Random Forst)
-- The model is built using  two main deep learning Python librairies **(PyTorch and TensorFlow)**
-
+- The model is trained by a dataset containing past sales, inventory levels, and product/store details given for each product in a given day
+- **Modeling Assumption1:** Each day is treated as independent, allowing the task to be framed as standard supervised learning.
+- **Modeling Assumption2:** Daily features (past sales, inventory, product/store attributes) are assumed to capture relevant patterns, removing the need for explicit time-series modeling.
+- **Problem Formulation:** The model is formulated as a supervised regression problem, where daily product/store features are used to predict the expert demand forecast.
+- **Frameworks:** The model is implemented using two major deep learning Python libraries: **PyTorch** and **TensorFlow**.
 ---
-## Tools & Libraries used ?????
+## Tools & Libraries used ???
 - **Programming Language:** Python
 - **Python Libraries:** Numpy, Pandas, Matplotlib, Scikit-learn, PyTorch, TensorFlow
-- **Tool:** Jupyter Notebook, Git/GitHub, Google Colab
+- **Tool:** Jupyter Notebook, Git/GitHub
 
 ---
 ## Dataset & Variables
@@ -92,10 +92,10 @@ Both frameworks achieved **comparable performance**, but each had strengths depe
 ---
 ## Project Structure ???
 ```
-Retail-Inventory-Demand-Forecasting-DeepLearning/
+Retail-Demand-Forecasting-DeepLearning/
 ├── data/
 │ ├── raw/
-│ │   └── retail_store_inventory.csv
+│ │   └── retail_store_inventory.csv        #Dataset comes from Kaggle (see Acknowledgments for detail)
 │ ├── interim/
 │ │   ├── ?????.py           
 │ │   ├── ?????.py           
