@@ -163,6 +163,7 @@ Retail-Demand-Forecasting-DeepLearning/
 ---
 ## Acknowledgments
 Dataset: [Kaggle-Retail Store Inventory Forecasting](https://www.kaggle.com/datasets/anirudhchauhan/retail-store-inventory-forecasting-dataset)  
+
 ---
 
 ## Author
