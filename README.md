@@ -27,37 +27,25 @@ Accurate  product demand forcast is a critical challenge in retail supply chains
 ## Dataset & Variables
 The dataset was provided in Kaggle (see Acknowledgments section) and includes detailed of retail store inventory as a table named **retail_store_inventory** with below varaibles.
 - **number of Rows of the table:** ~73,000  
-- **Columns (variabes):**
+- **Columns (variabes):** 15
 
-| Column Name         | Description                              |
-|---------------------|------------------------------------------|
-| `Customer ID`       | Unique identifier for each patient       |
-| `Year`              | Year of hospitalization                  |
-| `Month`             | Month of hospitalization                 |
-| `Date`              | Date of hospitalization                  |
-| `No_of_children`    | Number of children the patient has       |
-| `Charges`           | Hospitalization cost                     |
-| `Hospital_Tier`     | Tier level of the hospital (tie1-1 best) |
-| `City_Tier`         | Tier classification of the city (tie1-1 best)|
-| `State_ID`          | ID of the State                          |
-
-
-
-- Date –--- ---------------- The specific day when the sales or demand data was recorded.  
-- Store ID –---------------- A unique identifier for each store location.
-- Product ID –-------------- A unique identifier for each product in the catalog.
-- Category –---------------- The classification of the product (e.g., electronics, toys, groceries).
-- Inventory Level ---------- the number of products in inventory
-- Region –------------------ The geographical area where the store is located (e.g., North, South, West ).
-- Units Sold –-------------- The actual number of product units sold on the given date.
-- Units Ordered –----------- The number of product units requested by the store or customers (may differ from units sold if out of stock).
-- Demand Forecas------------ The predicted number of units expected to be sold, based on forecasting models (by experts).
-- Price –------------------- The selling price of the product per unit at the time of sale.
-- Discount –---------------- Any reduction applied to the original product price (percentage or amount).
-- Weather Condition –------- Environmental factors such as sunny, rainy, which can influence demand.
-- Holiday/Promotion –------- Indicates if the date coincided with a holiday, festival, or promotional campaign (binary ).
-- Competitor Pricing –------ Price of a similar product offered by competitors in the same region or market.
-- Seasonality –------------- Cyclical or seasonal effects influencing sales patterns (e.g., Autumn, winter, spring).
+| Column Name             | Description                                                                                                 |
+|-------------------------|-------------------------------------------------------------------------------------------------------------|
+| `Date`                  | The specific day when the sales or demand data was recorded                                                 |
+| `Store ID`              | A unique identifier for each store location                                                                 |
+| `Product ID`            | A unique identifier for each product in the catalog                                                         |
+| `Category`              | The classification of the product (e.g., electronics, toys, groceries)                                      |
+| `Inventory Level`       | The number of products in inventory                                                                         |
+| `Region`                | The geographical area where the store is located (e.g., North, South, West )                                |
+| `Units Sold`            | The actual number of product units sold on the given date                                                   |
+| `Units Ordered`         | The number of product units requested by the store or customers (may differ from units sold if out of stock)|
+| `Demand Forecas`        | The predicted number of units expected to be sold, based on forecasting models (by experts)                 |
+| `Price`                 | The selling price of the product per unit at the time of sale                                               |
+| `Discount`              | Any reduction applied to the original product price (percentage or amount)                                  |
+| `Weather Condition`     | Environmental factors such as sunny, rainy, which can influence demand                                      |
+| `Holiday/Promotion`     | Indicates if the date coincided with a holiday, festival, or promotional campaign (binary )                 |
+| `Competitor Pricing`    | Price of a similar product offered by competitors in the same region or market                              |
+| `Seasonality`           | Cyclical or seasonal effects influencing sales patterns (e.g., Autumn, winter, spring)                      |
 
 ---
 ## Methodology ???
