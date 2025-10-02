@@ -125,7 +125,6 @@ Dataset: [Kaggle-Retail Store Inventory Forecasting](https://www.kaggle.com/data
 ## Author
 
 **Abolfazl Zolfaghari**  
-Data Science Graduate
 [Email](ab.zolfaghari.abbasghaleh) | [GitHub](https://github.com/abolfazl6678)
 
 ---
