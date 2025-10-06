@@ -76,6 +76,7 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
 |-----------------------|---------|---------|
 | ANN (TensorFlow)      |  81.13  |  0.99   |
 | ANN (PyTorch)         |  75.71  |  0.99   |
+|-----------------------|---------|---------|
 
 ---
 ## PyTorch vs TensorFlow – My Observations
