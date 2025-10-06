@@ -94,61 +94,32 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
 Both frameworks achieved **comparable performance**, but each had strengths depending on workflow needs. 
 
 ---
-## Project Structure ???
+## Project Structure
 ```
 Retail-Demand-Forecasting-DeepLearning/
 ├── data/
 │ ├── raw/
 │ │   └── retail_store_inventory.csv        #Dataset comes from Kaggle (see Acknowledgments for detail)
-│ ├── interim/
-│ │   ├── ?????.py           
-│ │   ├── ?????.py           
-│ │   └── ?????.xlsx
+│ ├── interim/           
+│ │   └── cleaned_data.parquet
 │ └── processed/
-│     ├── ?????.parquet
-│     ├── ?????.parquet
-│     ├── ?????.parquet
-│     └── ?????.parquet
 ├── jupyter_notebook_Scripts/
-│     ├── 01_EDA_Feature_Engineering.ipynb
-│     ├── 02_Hypothesis_tesing.ipynb 
-│     └── 03_ML_modeling.ipynb
+│     ├── 01_Data_Cleaning_inspection.ipynb
+│     ├── 02_DeepLearning_model_tensorflow.ipynb 
+│     └── 03_DeepLearning_model_pytorch.ipynb
 ├── output/
-│ ├── jupyter_notebook/
-│ │   ├── 01_EDA_Feature_Engineering.docx
-│ │   ├── 02_Hypothesis_tesing.docx
-│ │   └── 03_ML_modeling.docx
-│ ├── SQL/
-│ │   ├── merged_cleaned_tables_Hospitalisation_details_Medical_Examinations.csv
-│ │   ├── data_analysis_1.png
-│ │   ├── data_analysis_2.png
-│ │   ├── data_analysis_3.png
-│ │   └── data_analysis_4.png
+│     ├── 01_Data_Cleaning_inspection.docx
+│     ├── 02_DeepLearning_model_tensorflow.docx
+│     └── 03_DeepLearning_model_pytorch.docx
 ├── plots/
-│     ├── Box_plot_whisker.png
-│     ├── Cost_dist_hospital_tier_gender.png
-│     ├── Histogram.png
-│     ├── Median_cost_radar_plot.png
-│     ├── stacked_plot.png
-│     ├── Swarm_Plots.png
-│     ├── Heat_map.png
-│     ├── Decision_Tree_Regressor.png
-│     ├── K-Nearest_Neighbors_(KNN)_Regression.png
-│     ├── Lasso_Regression_(L1_regularization).png
-│     ├── Learning_Curves.png
-│     ├── Linear_Regression.png
-│     ├── Predicted_vs_Actual.png
-│     ├── Random_Forest_Regressor.png
-│     ├── Residual_Plot.png
-│     ├── Ridge_Regression_(L2_regularization).png
-│     ├── Support_Vector_Regressor_(SVR).png
-│     └── XGBoost_Regression.png
-├── SQL/
-│     └── SQL_Script.sql
-├── tableau/
-│     ├── Business_Insights.twbx
-│     └── Business_Insights.twb
-├── ML_model.pkl
+│     ├── Convergence_Curve_tf.png
+│     ├── Residual_Plot_pt.png
+│     ├── Residual_Plot_tf.png
+│     ├── training_validation_loss_tf.png
+│     ├── True_Actual_Demand_Forecast_pt.png
+│     └── True_Actual_Demand_Forecast_tf.png
+├── DL_model_pytorch.pkl
+├── DL_model_pytorch.pkl
 └── README.md
 
 ```
