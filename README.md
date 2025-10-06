@@ -17,11 +17,12 @@ Accurate  product demand forcast is a critical challenge in retail supply chains
 - **Modeling Assumption2:** Daily features (past sales, inventory, product/store attributes) are assumed to capture relevant patterns, removing the need for explicit time-series modeling.
 - **Problem Formulation:** The model is formulated as a supervised regression problem, where daily product/store features are used to predict the expert demand forecast.
 - **Frameworks:** The model is implemented using two major deep learning Python libraries: **PyTorch** and **TensorFlow**.
+- **GPU:** The model is designed to automatically use GPU (if available) for faster training, evaluation, and prediction.
 ---
-## Tools & Libraries used ???
+## Tools & Libraries used 
 - **Programming Language:** Python
-- **Python Libraries:** Numpy, Pandas, Matplotlib, Scikit-learn, PyTorch, TensorFlow
-- **Tool:** Jupyter Notebook, Git/GitHub
+- **Python Libraries:** Numpy, Pandas, Matplotlib, PyTorch, TensorFlow, keras_tuner, optuna
+- **Tool:** Google Colab with GPU, Git/GitHub
 
 ---
 ## Dataset & Variables
@@ -48,51 +49,39 @@ The dataset was provided in Kaggle (see Acknowledgments section) and includes de
 | `Seasonality`           | Cyclical or seasonal effects influencing sales patterns (e.g., Autumn, winter, spring)                      |
 
 ---
-## Methodology ???
+## Methodology
 1. **Data Preprocessing**  
-   - Handling missing values  
-   - Feature engineering (time features, product/store encoding)  
-   - Normalization  
-
-2. **Model Development**  
-   - **ANN in PyTorch**  
-   - **ANN in TensorFlow**
-   - - Framework: TensorFlow / PyTorch  
-   - **Architecture:**  
-       - Input Layer: Encoded categorical + scaled numerical features  
-       - Dense(128, ReLU)  
-       - Dense(64, ReLU)  
-       - Dropout(0.3)  
-       - Output: Dense(1, Linear) 
-   - Hyperparameter tuning  
-
-3. **ML Baseline Comparisons**  
-   - Linear Regression  
-   - Random Forest  
-   - XGBoost  
-
-4. **Evaluation Metrics**  
-   - **MAE (Mean Absolute Error):** measures average forecast error  
-   - **RMSE (Root Mean Squared Error):** penalizes larger errors  
-   - **R² Score:** explains variance captured by the model
+   - Inspecting data
+   - Handling missing values
+   - Remiving duplicated rows
+   - Data type conversion
+   - Data scaling
+     
+2. **Model Development by TensorFlow**  
+   - Fully connected ANN
+   - Hyperparameter tunning by keras_tunner
+   - Evaluate the best model
+3. **Model Development by PyTorch**
+   - Fully connected ANN
+   - Hyperparameter tunning by keras_tunner
+   - Evaluate the best model
+4. **Evaluation Metrics** 
+   - MSE (Mean Squared Error)  
+   - R² Score
+5. **Evaluation Metrics**
+   - Save the best and trained model properly
+---
+## Results 
+| Model                 |  MSE    |   R²    |
+|-----------------------|---------|---------|
+| ANN (TensorFlow)      |  81.13  |  0.99   |
+| ANN (PyTorch)         |  75.71  |  0.99   |
 
 ---
-## Results ???
-| Model                 | RMSE ↓  | MAE ↓  | R² ↑ |
-|-----------------------|---------|--------|------|
-| Linear Regression     | ...     | ...    | ...  |
-| Random Forest         | ...     | ...    | ...  |
-| XGBoost               | ...     | ...    | ...  |
-| ANN (PyTorch)         | ...     | ...    | ...  |
-| ANN (TensorFlow)      | ...     | ...    | ...  |
-
----
-## PyTorch vs TensorFlow – My Observations ???
+## PyTorch vs TensorFlow – My Observations
+- **Both frameworks** have shown strong results in prediction of demand forcast.
 - **PyTorch:** More intuitive training loop, easier debugging.  
-- **TensorFlow/Keras:** More concise, production-ready, easier deployment with TensorFlow Serving.  
-
-Both frameworks achieved **comparable performance**, but each had strengths depending on workflow needs. 
-
+- **TensorFlow/Keras:** More concise, production-ready, easier deployment with TensorFlow Serving. 
 ---
 ## Project Structure
 ```
@@ -129,7 +118,7 @@ Retail-Demand-Forecasting-DeepLearning/
 ## Future Work
 - Incorporate external features (holidays, promotions, weather)  
 - Experiment with sequence models (RNN/LSTM/GRU) for time-series demand  
-- Deploy model as an API for real-time demand forecasting  
+- Deploy the model with an API for real-time demand forecasting into cloud
 
 ---
 ## Acknowledgments
