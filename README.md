@@ -8,7 +8,7 @@ Accurate  product demand forcast is a critical challenge in retail supply chains
 **Business Insights:** Forecasting results provide actionable insights to minimize stock-outs, reduce excess inventory, and optimize replenishment planning.
 
 ---
-## Project Objectives and assumptions
+## Project Objectives and Assumptions
 
 - Build a model to predict daily demand for each product 
 - The model is built using Artificial Neural Networks (ANNs) - Deep Learning
@@ -19,7 +19,7 @@ Accurate  product demand forcast is a critical challenge in retail supply chains
 - **Frameworks:** The model is implemented using two major deep learning Python libraries: **PyTorch** and **TensorFlow**.
 - **GPU:** The model is designed to automatically use GPU (if available) for faster training, evaluation, and prediction.
 ---
-## Tools & Libraries used 
+## Tools & Libraries Used 
 - **Programming Language:** Python
 - **Python Libraries:** Numpy, Pandas, Matplotlib, PyTorch, TensorFlow, keras_tuner, optuna
 - **Tool:** Google Colab with GPU, Git/GitHub
